@@ -29,7 +29,7 @@
                 </li>
                 <li role="menuitem">
                     <a href="#create">
-                        Create
+                        Create and Diary
                     </a>
                 </li>
                 <li role="menuitem">
@@ -59,7 +59,7 @@
             <h4>Meeting the Brief</h4>
             <p>
                 <video width="40%" height="40%" id="videoPlayer" controls="controls">
-                    <source src="images/mtb.mp4" type="video/mp4">
+                    <source src="../Artefact/video.mp4" type="video/mp4">
                 </video>   
             </p>
         </div>
@@ -113,19 +113,19 @@
             </p>
         </div>
         <div id="create" style="margin-left: 5px; margin-right: 5px;">
-            <h4>Create</h4>
-            <p><b>Week 1:</b> Began work on the investigation to gather different project ideas.</p>
-            <p><b>Week 2:</b> Conducted an interview with a Director of a company regarding the idea of car crash detection.</p>
-            <p><b>Week 3:</b> Began creating flowcharts for the different stages of the project.</p>
-            <p><b>Week 4:</b> Flowcharts concluded, began thinking up a UI design.</p>
-            <p><b>Week 5:</b> Began writing up investigations section of report, first draft of the user interface for the model created.</p>
+            <h4>Create and Diary</h4>
+            <p><b>Week 1:</b> Began work on the investigation to gather different project ideas. Encountered a couple of issues during this process. I could not find much inspiration for unique ideas online. More research needed next week.</p>
+            <p><b>Week 2:</b> Came across Tesla's crash avoidance. Decided to investigate car crash detection and check basic parameters. Conducted an interview with a Director of a company regarding the idea of car crash detection. Going to continue with this idea further on.</p>
+            <p><b>Week 3:</b> Began creating flowcharts for the different stages of the project. Further investigation undertaken in terms of gathering data on cars. Not much available on what the expected operating capacity of a car should be, more research needed.</p>
+            <p><b>Week 4:</b> Flowcharts concluded, began thinking up a UI design. Data found by GoFar on braking data from cars, this allowed me to create an initial model using quadratic equations which proved quite inaccurate and was overall scrapped.</p>
+            <p><b>Week 5:</b> Began writing up investigations section of report, first draft of the user interface for the model created. Further research on the model was undertaken as to the equations that could be used. Began looking through physics books and asking my teacher as to where I should be looking.</p>
             <p><b>Week 6:</b> Mocks</p>
             <p><b>Week 7:</b> Mocks</p>
-            <p><b>Week 8:</b> Model UI revised.</p>
-            <p><b>Week 9:</b> First draft of model created.</p>
-            <p><b>Week 10:</b> Second revision of the embedded system made. Model revised.</p>
-            <p><b>Week 11:</b> Model revised further, plan and design section of brief concluded.</p>
-            <p><b>Week 12:</b> Model proven out, report finalised and <a href="docs/html/index.html" target="_blank">documentation</a> made.</p>
+            <p><b>Week 8:</b> Model UI revised. Made it more user friendly and in line with modern design principles, consulted professionals regarding UI positioning and recommended elements such as the TrackBar.</p>
+            <p><b>Week 9:</b> First draft of model created. Got an equation similar to the one I used in the final product, this should be a good starting point for further development on the equation. Equation is a bit messy so further revision could entail some cleaning up.</p>
+            <p><b>Week 10:</b> Second revision of the embedded system made. This would use events and would add a beeping sound as a placeholder alarm to show the embedded system flagging a collision. Model revised using more accurate equations which, looked into piecewise functions and changed to linear graphs when creating the model.</p>
+            <p><b>Week 11:</b> Model revised further, plan and design section of brief concluded. The equation used in the model is now cleaned up and can be easily edited further. Now using 1 equation instead of 3 seperate ones to calculate the outcome of the crash making everything a lot easier to maintain now.</p>
+            <p><b>Week 12:</b> Model proven out and all complex fractions were removed making this a lot easier to maintain and read. The model is now also more accurate and returns a probability instead of a percentage as it is more fitting for what this is calculating. The report is now finalised and <a href="docs/html/index.html" target="_blank">documentation</a> has been added.</p>
             <br>
             <p>Through this creation cycle, unit tests were used a lot on the model as it was the only section that would have a practical need for a unit test. This test can be found in the Unit_Test folder.
                 This unit testing aimed to see if the simulation was giving out an accurate response by checking one value which had been manually proven out, if it did not recreate this same value it would fail the test.
@@ -136,7 +136,7 @@
             </p>
             <p>
                 When making this project I had certain bits of code which I was quite proud of, particularly my code for processing the input data and subsequently running the simulation. This code was cleanly made, and works particularly well 
-                using a variety of different techniques such as Object Oriented Programming.
+                using a variety of different techniques such as Object Oriented Programming. This code would prove to be very useful incase of misinputs on the side of the user giving a seamless use of the application.
             </p>
             <img src="images/code.png" style="width: 100%; height: 100%;">
         </div>
@@ -152,8 +152,7 @@
                 and the velocity at which the car was moving at prior to the impact. Using these I made a piecewise function which took in all the input data and would give a probability of an impact.
                 I would then create a UI for this model which would evaluate the different input data and convert it to its correct format. This could then be used to feed into the model.<br><br>
 
-                I could further improve on this model by making the equation more accurate which the model feeds off of. I was limited mostly by my lack of mathematical knowledge and knowledge of physics
-                which could aid me greatly if I improved on it more. If I was to go back on this project again I would also improve upon the interface for the model and perhaps add more input data.
+                I could further improve on this model by making the equation more accurate which the model feeds off of. I was limited mostly by my lack of data, which if I had could aid me greatly if I had more. If I was to go back on this project again I would also improve upon the interface for the model and perhaps add more input data.
             </p>
         </div>
         <div id="references">
@@ -164,6 +163,7 @@
                 <a href="https://visualstudio.microsoft.com/" target="_blank">https://visualstudio.microsoft.com/</a> -- IDE for Winforms and C# code and Python development<br>
                 <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a> -- Text editor (definition by Microsoft) used for Python development<br>
                 <a href="https://github.com/Bocksa/CS-2024" target="_blank">https://github.com/Bocksa/CS-2024</a> -- Github repo used to track progress<br>
+                <a href="https://khang-nd.github.io/7.css/">https://khang-nd.github.io/7.css/</a> -- CSS Framework used for the report<br>
                 <br>
                 <b>Resources used to help with issues</b>
                 <br>
@@ -184,6 +184,15 @@
                 <a href="https://www.quora.com/How-much-g-force-does-a-normal-car-have?top_ans=326045244" target="_blank">https://www.quora.com/How-much-g-force-does-a-normal-car-have?top_ans=326045244</a><br>
                 <a href="https://copradar.com/chapts/references/acceleration.html" target="_blank">https://copradar.com/chapts/references/acceleration.html</a><br>
                 <a href="https://www.drive.com.au/news/deflated-expectations-20100331-refb/" target="_blank">https://www.drive.com.au/news/deflated-expectations-20100331-refb/</a><br>
+            </p>
+            <h4>Word Count</h4>
+            <p>
+                <b>Meeting the Brief:</b> 514<br>
+                <b>Investigation:</b> 247<br>
+                <b>Plan and Design:</b> 335<br>
+                <b>Create and Diary:</b> 714<br>
+                <b>Evaluation:</b> 313<br>
+                <b>Total:</b> 2123<br>
             </p>
             <p>
     yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3
