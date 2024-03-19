@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['simulation_0',['Simulation',['../class_model_1_1_simulation.html',1,'Model']]]
+  ['main_0',['Main',['../class_c_s2024_1_1_main.html',1,'CS2024']]]
 ];

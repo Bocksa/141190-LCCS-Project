@@ -7,7 +7,7 @@ using Model;
 
 namespace CS2024 {
     public partial class Main : Form {
-        bool Running = false;
+        bool running = false;
         public Main() {
             InitializeComponent();
         }
@@ -17,10 +17,13 @@ namespace CS2024 {
         }
 
         private void runButton_Click(object sender, EventArgs e) {
-            Running = !Running;
-            if (Running) {
+            running = !running;
+            if (running) {
                 string ImpactNumbers = Regex.Replace(ImpactForceBox.Text, "[^0-9.]", ""); // Removes all characters bar the numbers zero to 9 and a decimal point
                 string VelocityNumbers = Regex.Replace(VelocityBox.Text, "[^0-9.]", "");
+
+                ImpactNumbers = Input.RemoveAllBarOneOfCharacter('.', ImpactNumbers); // Removes all instances of the '.' character bar the first one
+                VelocityNumbers = Input.RemoveAllBarOneOfCharacter('.', VelocityNumbers);
 
                 ImpactForceBox.Text = ImpactNumbers; // Sets the input text box text to its appropriate variable
                 VelocityBox.Text = VelocityNumbers;
