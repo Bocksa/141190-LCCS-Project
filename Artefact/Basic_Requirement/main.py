@@ -35,10 +35,10 @@ datalogger.set_column_titles("X-Force", "Y-Force", "Z-Force", "AbsoluteForce")
 
 def on_forever():
     global Force, XForce, YForce, ZForce, AlarmType
-    Force = input.acceleration(Dimension.STRENGTH)
-    XForce = input.acceleration(Dimension.X)
-    YForce = input.acceleration(Dimension.Y)
-    ZForce = input.acceleration(Dimension.Z)
+    Force = float(input.acceleration(Dimension.STRENGTH))
+    XForce = int(input.acceleration(Dimension.X))
+    YForce = int(input.acceleration(Dimension.Y))
+    ZForce = int(input.acceleration(Dimension.Z))
     if input.acceleration(Dimension.STRENGTH) >= 300:
         if Force >= 8000:
             AlarmType = 2
